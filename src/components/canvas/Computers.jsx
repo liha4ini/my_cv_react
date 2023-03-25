@@ -13,6 +13,14 @@ const Computers = () => {
             <hemisphereLight intensity={0.15}
             groundColor='black' />
             <pointLight intensity={1} />
+            <spotLight
+                position={[-20, 50, 10]}
+                angle={0.12}
+                penumbra={1}
+                intensity={1}
+                castShadow
+                shadow-mapSize={1024}
+            />
             <primitive
                 object={computer.scene}
                 scale={0.75}
@@ -45,4 +53,4 @@ const ComputerCanvas = () => {
     )
 }
 
-export default Computers
+export default ComputerCanvas
